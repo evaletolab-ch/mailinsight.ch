@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <main>
+      <div id="content">
+        {{ content }}
+      </div>
+    </main>
+    <script src="{{ site.baseurl }}/js/vendor/anchor-js/anchor.min.js"></script>
+    <script>
+      var selector = '#content h2, #content h3, #content h4, #content h5';
+
+      anchors.options = {
+        //visible: 'always',
+        placement: 'left'
+      };
+      anchors.add(selector);
+
+      $(selector).wrapInner('<span/>');
+    </script>
+  </body>
+</html>

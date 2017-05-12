@@ -1,0 +1,95 @@
+title: "evaletolab.ch"
+description: "Votre guide pour le développement de vos idées."
+
+exclude:
+  - bin
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - docs
+  - Gemfile*
+  - node_modules
+  - package.json
+  - CNAME
+  - Rakefile
+  - README.md
+  - script
+  - test
+  - vendor
+  - node_modules
+
+permalink: /:path/
+
+collections:
+  articles:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/cards/default.png
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+
+prose:
+  rooturl: '_articles/stories'
+  siteurl: 'http://evaletolab.ch'
+  media: 'assets/images'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "category"
+        field:
+          element: "select"
+          label: "Add Categories"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Food Story"
+              value: "galerie"
+            - name: "Aktuelles"
+              value: "news"
+            - name: "Presse"
+              value: "presse"
+
+theme: jekyll-theme-primer
+              
+gems:
+  - jekyll-mentions
+  - jekyll-octicons
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+
+sass:
+  style: :compressed
+  sass_dir: assets/css/
+  load_paths:
+    - node_modules
+    - node_modules/**/*/node_modules
+
+branch: master
+
+github:
+  repository_nwo: evaletolab-ch/evaletolab-ch
+
+twitter:
+  username: evaletolab
+
+# https://github.com/jekyll/jekyll-seo-tag
+social:
+  name: Evalet Olivier
+  links:
+    - https://twitter.com/evaletolabs
+    - https://www.linkedin.com/in/evaleto/
+    - https://github.com/evaletolab
+
+#facebook:
+#  publisher: 
