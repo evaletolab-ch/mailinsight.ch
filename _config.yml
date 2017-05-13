@@ -1,4 +1,4 @@
-title: "evaletolab.ch"
+title: "mailinsight.ch"
 description: "Votre guide pour le développement de vos idées."
 
 exclude:
@@ -37,7 +37,7 @@ defaults:
 
 prose:
   rooturl: '_articles/stories'
-  siteurl: 'http://evaletolab.ch'
+  siteurl: 'http://mailinsight.ch'
   media: 'assets/images'
   metadata:
     _posts:
@@ -78,7 +78,7 @@ sass:
 branch: master
 
 github:
-  repository_nwo: evaletolab-ch/evaletolab-ch
+  repository_nwo: evaletolab-ch/mailinsight-ch
 
 twitter:
   username: evaletolab
@@ -87,9 +87,9 @@ twitter:
 social:
   name: Evalet Olivier
   links:
-    - https://twitter.com/evaletolabs
+    - https://twitter.com/mailinsights
     - https://www.linkedin.com/in/evaleto/
-    - https://github.com/evaletolab
+    - https://github.com/evaletolab-ch
 
 #facebook:
 #  publisher: 
